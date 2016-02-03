@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.uforia.shareExtension"
+      version="0.1.0">
+    <name>ShareExtensionPlugin</name>
+    <description>Share Extension Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap</keywords>
+  
+    <js-module src="www/shareExtensionPlugin.js" name="ShareExtensionPlugin">
+        <clobbers target="window.shareExtensionPlugin" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        
+		<config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ShareExtensionPlugin">
+                <param name="android-package" value="com.uforia.shareExtension.ShareExtensionPlugin"/>
+            </feature>
+        </config-file>
+		
+        <source-file src="src/android/com/uforia/shareExtension/ShareExtensionPlugin.java" target-dir="src/com/uforia/shareExtension" />      
+     
+	 </platform>          
+</plugin>

@@ -1,0 +1,29 @@
+{
+  "name": "uforia-plugin-share-extension",
+  "version": "1.0",
+  "description": "Share extension plugin",
+  "cordova": {
+    "id": "uforia-plugin-share-extension",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmusyj/cordova-plugin-share-extension.git"
+  },
+  "keywords": [    
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Jason Musyj @jaymusyj",
+  "license": "MIT",
+  "homepage": "https://github.com/jmusyj/cordova-plugin-share-extension"
+}
